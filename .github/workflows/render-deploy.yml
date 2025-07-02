@@ -22,11 +22,10 @@ jobs:
       - name: Dar permisos a Maven Wrapper
         run: chmod +x mvnw
 
-      - name: Compilar y ejecutar pruebas
+      - name: Compilar y ejecutar pruebas (no se usa para desplegar, pero valida código)
         run: |
           ./mvnw clean install
           ./mvnw test
 
       - name: Activar despliegue en Render
-        run: |
-          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
+        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
