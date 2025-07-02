@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-
+/* 
     @SuppressWarnings("null")
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
@@ -16,5 +16,5 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addRedirectViewController("index", "/");
 
     }
-
+*/
 }
