@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="es">
 <!-- Head -->
-<th:block th:replace="fragments/head :: head"></th:block>
+<th:block th:replace="~{fragments/head :: head}"></th:block>
 
 <body>
 
 
   <!-- Navbar -->
-  <th:block th:replace="fragments/navbar :: navbar"></th:block>
+  <th:block th:replace="~{fragments/navbar :: navbar}"></th:block>
 
   <!-- Header -->
-  <th:block th:replace="fragments/header :: header"></th:block>
+  <th:block th:replace="~{fragments/header :: header}"></th:block>
 
   <main class="my-5">
 
@@ -110,7 +110,7 @@
 
 
   <!-- Footer -->
-  <th:block th:replace="fragments/footer :: footer"></th:block>
+  <th:block th:replace="~{fragments/footer :: footer}"></th:block>
 
   <!-- JavaScript de Bootstrap y Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>

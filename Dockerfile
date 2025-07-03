@@ -1,5 +1,9 @@
 FROM amazoncorretto:17-alpine-jdk
 
-COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
+WORKDIR /app
 
-ENTRYPOINT [ "java" , "-jar" , "/app.jar" ]
+COPY . .
+
+RUN ./mvnw clean package -DskipTests
+
+ENTRYPOINT ["java", "-jar", "target/demo-0.0.1-SNAPSHOT.jar"]
