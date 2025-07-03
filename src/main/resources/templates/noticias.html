@@ -2,12 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <!-- Head -->
-<th:block th:replace="fragments/head :: head"></th:block>
+<th:block th:replace="~{fragments/head :: head}"></th:block>
 
 <body>
 
   <!-- Navbar -->
-  <th:block th:replace="fragments/navbar :: navbar"></th:block>
+  <th:block th:replace="~{fragments/navbar :: navbar}"></th:block>
 
   <main class="my-5">
     <!-- Noticias -->
@@ -49,7 +49,7 @@
   <br><br>
 
   <!-- Footer -->
-  <th:block th:replace="fragments/footer :: footer"></th:block>
+  <th:block th:replace="~{fragments/footer :: footer}"></th:block>
 
 </body>
 
